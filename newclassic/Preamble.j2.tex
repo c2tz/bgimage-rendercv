@@ -30,10 +30,13 @@
 \usepackage{lastpage} % for getting the total number of pages
 \usepackage[default, type1]{sourcesanspro} % for using source sans 3 font
 \usepackage{ifthen}
-\usepackage{transparent}
+% \usepackage{transparent}
 \usepackage{graphicx}
 \AddToHook{shipout/background}{%
-    \put (0in,-\paperheight){\transparent{0.25}\includegraphics[width=\paperwidth,height=\paperheight]{Image.png}}%
+    \put (0in,-\paperheight){
+        % \transparent{0.25}
+        \includegraphics[width=\paperwidth,height=\paperheight]{Image.png}
+    }%
 }
 
 % Some settings:

@@ -2,10 +2,10 @@ from typing import Literal
 
 import pydantic
 
-from .. import ThemeOptions
+from rendercv.themes import ThemeOptions
 
 
-class NewClassicThemeOptions(ThemeOptions):
+class NewclassicThemeOptions(ThemeOptions):
     """This class is the data model of the theme options for the classic theme."""
 
     theme: Literal["newclassic"]
